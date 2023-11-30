@@ -1,5 +1,6 @@
-name: Build
-on: [push, pull_request]
+name: Build apk
+on: 
+  workflow_dispatch:
 
 jobs:
   # Build job. Builds app for Android with Buildozer
