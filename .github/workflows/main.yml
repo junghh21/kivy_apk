@@ -16,6 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - run: cd pongpong
       - name: Build with Buildozer
         run: yes | buildozer init
       - run: yes | buildozer -v android debug
