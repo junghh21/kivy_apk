@@ -1,0 +1,21 @@
+
+**Dockerfile**
+FROM node:10-alpine
+WORKDIR /app
+COPY . .
+RUN yarn install --production
+CMD ["node", "/app/src/index.js"]
+
+docker ps
+docker stop <the-container-id>
+docker rm <the-container-id>
+
+docker build -t docker-101 .
+docker run -dp 3000:3000 docker-101
+
+**Docker Hub**
+docker image ls
+docker tag docker-101 junghh21/101-todo-app
+docker push junghh21/101-todo-app
+docker pull junghh21/101-todo-app
+docker run -dp 3000:3000 YOUR-USER-NAME/101-todo-app
