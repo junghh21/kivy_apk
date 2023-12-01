@@ -19,3 +19,7 @@ docker tag docker-101 junghh21/101-todo-app
 docker push junghh21/101-todo-app
 docker pull junghh21/101-todo-app
 docker run -dp 3000:3000 YOUR-USER-NAME/101-todo-app
+
+
+docker container run --interactive --tty --rm ubuntu bash
+
