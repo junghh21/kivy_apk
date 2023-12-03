@@ -18,8 +18,7 @@ jobs:
 
       - run: cd pongpong
       - name: Build with Buildozer
-        run: yes | buildozer init
-      - run: yes | buildozer -v android debug
+        run: yes | buildozer -v android debug
         id: buildozer
 
       - name: Upload artifacts
