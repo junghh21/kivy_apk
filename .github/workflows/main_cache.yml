@@ -5,7 +5,7 @@ on:
 jobs:
   # Build job. Builds app for Android with Buildozer
   build-android:
-    name: Build for Android
+    name: Build for Android Cache
     runs-on: ubuntu-latest
 
     steps:
@@ -23,12 +23,7 @@ jobs:
           key: buildozer-global-${{ hashFiles('./buildozer.spec') }} # Replace with your path
     
       - name: Build with Buildozer
-        uses: ArtemSBulgakov/buildozer-action@v1
-        id: buildozer
-        with:
-          command: buildozer android debug
-          workdir: paint
-          buildozer_version: stable
+        run: buildozer android debug
 
       - uses: actions/upload-artifact@v3
         with:
