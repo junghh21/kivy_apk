@@ -11,13 +11,13 @@ I don't recommend to cache local buildozer directory because Buildozer doesn't a
 Use cache only if it speeds up your workflow! Usually this only adds 1-3 minutes to job running time, so I don't use it.
 
 Example:
-
+```
 - name: Cache Buildozer global directory
   uses: actions/cache@v2
   with:
     path: .buildozer_global
     key: buildozer-global-${{ hashFiles('test_app/buildozer.spec') }} # Replace with your path
-  
+```
 Location
 <repository>/.github/workflows
 
