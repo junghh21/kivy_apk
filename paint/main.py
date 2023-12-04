@@ -5,6 +5,7 @@ from kivy.uix.widget import Widget
 from kivy.uix.button import Button
 from kivy.graphics import Color, Ellipse, Line
 
+__version__ = "1.0.3"
 
 class MyPaintWidget(Widget):
 
