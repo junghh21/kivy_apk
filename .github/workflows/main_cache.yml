@@ -19,7 +19,7 @@ jobs:
       - name: Cache Buildozer global directory
         uses: actions/cache@v3
         with:
-          path: .buildozer
+          path: .buildozer_XXX
           key: buildozer-global-${{ hashFiles('./buildozer.spec') }} # Replace with your path
     
       - name: Build with Buildozer
