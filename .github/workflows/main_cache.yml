@@ -27,7 +27,7 @@ jobs:
         id: buildozer
         with:
           command: buildozer android debug
-          workdir: painter
+          workdir: paint
           buildozer_version: stable
 
       - uses: actions/upload-artifact@v3
