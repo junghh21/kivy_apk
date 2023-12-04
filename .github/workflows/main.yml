@@ -22,9 +22,6 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
           cache: 'gradle'
-          cache-dependency-path: | # optional
-            sub-project/*.gradle*
-            sub-project/**/gradle-wrapper.properties
       - name: Build with Buildozer
         run: yes | buildozer -v android debug
         id: buildozer
