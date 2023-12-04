@@ -23,7 +23,7 @@ jobs:
           key: buildozer-global-${{ hashFiles('./buildozer.spec') }} # Replace with your path
     
       - name: Build with Buildozer
-        run: buildozer android debug
+        run: yes | buildozer android debug
 
       - uses: actions/upload-artifact@v3
         with:
