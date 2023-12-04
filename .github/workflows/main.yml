@@ -17,7 +17,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - run: cd pongpong
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'oracle'
+          java-version: '17'
+          cache: 'gradle'
+          cache-dependency-path: | # optional
+            sub-project/*.gradle*
+            sub-project/**/gradle-wrapper.properties
       - name: Build with Buildozer
         run: yes | buildozer -v android debug
         id: buildozer
