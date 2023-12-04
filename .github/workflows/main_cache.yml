@@ -1,4 +1,4 @@
-name: Build apk
+name: Build apk cache
 on: 
   workflow_dispatch:
 
@@ -23,8 +23,12 @@ jobs:
           key: buildozer-global-${{ hashFiles('./buildozer.spec') }} # Replace with your path
     
       - name: Build with Buildozer
-        run: yes | buildozer -v android debug
+        uses: ArtemSBulgakov/buildozer-action@v1
         id: buildozer
+        with:
+          command: buildozer android debug
+          workdir: .
+          buildozer_version: stable
 
       - uses: actions/upload-artifact@v3
         with:
