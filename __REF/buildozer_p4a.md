@@ -1,5 +1,6 @@
 
-https://github.com/kivy/buildozer
+https://github.com/kivy/buildozer  
+https://github.com/kivy/python-for-android/  
 
 https://github.com/kivymd/KivyMD
 
