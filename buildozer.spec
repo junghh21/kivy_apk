@@ -1,17 +1,16 @@
 [app]
 
 # (str) Title of your application
-title = My Application
+title = Dash Board
 
 # (str) Package name
-package.name = myapp
+package.name = board
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.test
+package.domain = io.test
 
 # (str) Source code where the main.py live
-source.dir = ./md_button
-
+source.dir = ./App
 # (list) Source files to include (let empty to include all the files)
 source.include_exts = py,png,jpg,kv,atlas,h5,json,PNG
 
