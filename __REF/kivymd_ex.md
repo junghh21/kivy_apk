@@ -1,4 +1,7 @@
 
+**Components**
+https://kivymd.readthedocs.io/en/1.1.1/components/
+
 **Components Bottom Navigation**
 https://github.com/kivymd/KivyMD/wiki/Components-Bottom-Navigation
 
