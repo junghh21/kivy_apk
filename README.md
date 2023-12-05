@@ -1,5 +1,7 @@
 # kivy_apk
 
+[![Build apk](https://github.com/junghh21/kivy_apk/actions/workflows/main.yml/badge.svg)](https://github.com/junghh21/kivy_apk/actions/workflows/main.yml)
+
 3 Ways to Convert Python App into APK
 https://towardsdatascience.com/3-ways-to-convert-python-app-into-apk-77f4c9cd55af
 
